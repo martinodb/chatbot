@@ -98,7 +98,7 @@
           <manifest>
             <addClasspath>true</addClasspath>
             <classpathPrefix>lib/</classpathPrefix>
-            <mainClass>main.java.chatbot.Chatbot</mainClass>
+            <mainClass>chatbot.Chatbot</mainClass>
           </manifest>
         </archive>
       </configuration>
