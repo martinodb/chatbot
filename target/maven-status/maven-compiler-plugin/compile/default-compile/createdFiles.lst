@@ -1,4 +1,0 @@
-chatbot/Chatbot.class
-dataprocessing/amazonwebservices/S3Client.class
-dataprocessing/elasticsearch/ElasticSearchClient.class
-dataprocessing/elasticsearch/CorporaIndexer.class
