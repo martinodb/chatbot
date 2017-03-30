@@ -117,6 +117,19 @@
           </executions>
         </plugin>
   </plugins>
+  
+   <resources>
+     <!-- https://maven.apache.org/plugins/maven-resources-plugin/examples/resource-directory.html -->
+     <resource>
+       <directory>src/main/java/chatbot/resourcefiles</directory>
+     </resource>
+     <resource>
+       <directory>src/main/resources</directory>
+     </resource>
+   </resources>
+  
+  
+  
 </build>
 
 
