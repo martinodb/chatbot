@@ -108,9 +108,19 @@
             <configuration>
               <transformers>
                 <!-- add Main-Class to manifest file -->
-                                <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
+                <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
                     <mainClass>chatbot.Chatbot</mainClass>
                 </transformer>
+                
+                <transformer implementation="org.apache.maven.plugins.shade.resource.IncludeResourceTransformer">
+                                    <!-- http://stackoverflow.com/questions/21679990/how-to-add-resources-to-jar-using-maven-shade-plugin -->
+                                    <!-- https://maven.apache.org/plugins/maven-shade-plugin/examples/resource-transformers.html#IncludeResourceTransformer -->
+                                    <resource>src/main/java/chatbot/resourcefiles</resource>
+                                    <resource>src/main/resources</resource>
+                </transformer>
+                
+                
+                
               </transformers>
             </configuration>
               </execution>
