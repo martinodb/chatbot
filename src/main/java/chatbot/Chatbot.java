@@ -421,7 +421,7 @@ public class Chatbot {
 
         String filename = "";
         if (asResource) {
-            URL stopWordsFile = Resources.getResource("resources/stopwords.txt");
+            URL stopWordsFile = Resources.getResource("resourcefiles/stopwords.txt");
             filename = stopWordsFile.getPath();
         }
         else
